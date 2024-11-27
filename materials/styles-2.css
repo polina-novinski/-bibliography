@@ -34,6 +34,7 @@ font-size: 1.2rem;
 .img{
 display: flex;
    margin-top: 1rem;
+   justify-content: center;
 }
 .btn-group {
  display: flex;
