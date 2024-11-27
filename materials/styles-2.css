@@ -1,0 +1,177 @@
+/* Modern CSS with Material Design principles */
+:root {
+   --primary-color: #8B4513;
+   --surface-color: #e0d3b9;
+   --text-color: #333;
+   --spacing-unit: 1rem;
+   --border-radius: 8px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   line-height: 1.6;
+   color: var(--text-color);
+   background-color: #f5f5f5;
+   padding: var(--spacing-unit);
+}
+.desk{
+display: flex;
+width: 60%;
+justify-content: center;
+ margin-top: 1rem;
+ margin-left: 20%;
+font-size: 1.2rem;
+  background: #e0d3b9;
+  border: 2px dashed DarkRed;
+  border-radius: 20px;
+}
+.img{
+display: flex;
+margin-left: 20%;
+   margin-top: 1rem;
+   width: 60%;
+   height: 40%;
+}
+.btn-group {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ gap: 1rem;
+ margin-top: 2rem;
+ }
+ .btn-group button {
+  cursor: pointer;
+   font: bold 150% fantasy;
+    background-color: transparent; /* Прозрачный цвет фона */
+    font-size: 1rem; /* Размер текста */
+    text-transform: uppercase; /* Все буквы заглавные */
+    color: #8B4513; /* Цвет текста */
+    border: 3px solid #8B4513; /* Параметры рамки */
+    border-radius: 0.4em;
+    padding: 0.4rem 1.3rem;
+
+ }
+  .btn-group button:hover {
+  background-color: #e0d3b9;
+}
+
+.block_decorate{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   }
+body {
+    background-image: url(back1.jpg);
+    background-size: cover
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: var(--spacing-unit);
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2rem;
+   padding: 1rem;
+   background: white;
+   border-radius: var(--border-radius);
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+   max-width: 200px;
+   height: auto;
+}
+
+.content {
+   background: white;
+   padding: 2rem;
+   border-radius: var(--border-radius);
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.input-group {
+   margin-bottom: 1.5rem;
+}
+
+.input-field {
+   width: 100%;
+   max-width: 300px;
+   padding: 0.75rem;
+   border: 1px solid #ddd;
+   border-radius: var(--border-radius);
+   font-size: 1rem;
+   transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+   outline: none;
+   border-color: var(--primary-color);
+}
+
+.button {
+   padding: 0.75rem 1.5rem;
+   border: none;
+   border-radius: var(--border-radius);
+   background-color: var(--primary-color);
+   color: white;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+.button:hover {
+   background-color: #724010;
+}
+
+.task-container {
+   margin: 2rem 0;
+   padding: 1.5rem;
+   background: var(--surface-color);
+   border-radius: var(--border-radius);
+}
+
+.result {
+   margin-top: 1rem;
+   padding: 1rem;
+   border-radius: var(--border-radius);
+   font-weight: 500;
+}
+
+.result.success {
+   background-color: #c8e6c9;
+   color: #2e7d32;
+}
+
+.result.error {
+   background-color: #ffcdd2;
+   color: #c62828;
+}
+
+@media (max-width: 768px) {
+   .header {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .content {
+       padding: 1rem;
+   }
+
+   .button {
+       width: 100%;
+       margin-top: 1rem;
+   }
+}
