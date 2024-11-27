@@ -1,4 +1,3 @@
-// Глобальные переменные для хранения состояния
 let currentQuestion = 0;
 let countTests = 0;
 const tasks = [
