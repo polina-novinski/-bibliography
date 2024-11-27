@@ -33,7 +33,7 @@ font-size: 1.2rem;
 }
 .img{
 display: flex;
-margin-left: 25%;
+margin: auto;
    margin-top: 1rem;
 }
 .btn-group {
